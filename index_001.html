@@ -10,23 +10,16 @@
     </head>
     <body>
       <h1>People of ROKN</h1>
-      <form action="https://www.google.com/search" method="GET">
-        <div class="mt-5 mx-auto search-bar input-group mb-3">
-            <input name="q" type="text" class="form-control rounded-pill" placeholder="이름을 입력하거 위 메뉴를 이용해주세요." aria-label="Recipient's username" aria-describedby="button-addon2">
+      <form action="https://www.google.com/search" method="GET" autocomplete="on" action="/action_page.php">
+        <div class="mt-5 mx-auto search-bar input-group mb-3" class="autocomplete">
+            <input id="myInput" name="q" type="text" class="form-control rounded-pill" placeholder="이름을 입력하거 위 메뉴를 이용해주세요." aria-label="Recipient's username" aria-describedby="button-addon2">
         </div>
-      </form>
-        <!--Make sure the form has the autocomplete function switched off:-->
-      <form autocomplete="on" action="/action_page.php">
-        <div class="autocomplete" style="width:300px;">
-          <input id="myInput" type="text" name="myCountry" placeholder="Country">
-        </div>
-        <input type="submit">
       </form>
       <script>
-        var countries = ["aaa", "bbb", "ccc"];
+        var rokn_name = ["박동혁", "서후원", "윤영하", "조천형", "한상국", "황도현"];
       </script>
       <script>
-        autocomplete(document.getElementById("myInput"), countries);
+        autocomplete(document.getElementById("myInput"), rokn_name);
       </script>
     </body>
 </html>
