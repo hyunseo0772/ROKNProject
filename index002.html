@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>People of ROKN</title>
+        <!--search bar jquery link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!--indexStyle.css link-->
+        <link rel="stylesheet" href="indexStyle.css">
+        <!--style.js link-->
+        <script src="style.js"></script>
+        <!--font link-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div id="titleBar">
+        <!--title & link-->
+        <span>
+          <a href="500626.html" class="menu">대한해협 해전</a>
+          <a href="990615.html" class="menu">제1연평해전</a>
+          <a href="020629.html" class="menu">제2연평해전</a>
+          <a href="100326.html" class="menu">천안함 피격사건</a>
+        </span>
+      </div>
+      <h1>People of ROKN</h1>
+      <!--search bar & autocomplete jquery-->
+      <form action="https://www.google.com/search" method="GET" autocomplete="off" action="/action_page.php">
+        <div class="mt-5 mx-auto search-bar input-group mb-3" class="autocomplete">
+            <input id="myInput" name="q" type="text" class="form-control rounded-pill" placeholder="이름을 입력하거 위 메뉴를 이용해주세요." aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+      </form>
+      <!--autocomplete mylist-->
+      <script>
+        var rokn_name = ["박동혁", "서후원", "윤영하", "조천형", "한상국", "황도현"];
+      </script>
+      <script>
+        autocomplete(document.getElementById("myInput"), rokn_name);
+      </script>
+    </body>
+</html>
