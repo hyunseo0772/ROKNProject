@@ -1,0 +1,35 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.search-bar{
+    width: 700px;
+}
+.header{
+    padding-bottom: 3em;
+}
+div.bottom-title{
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+a.item{
+    float: left;
+    margin: 0 3px;
+    padding: 10px;
+}
+
+/*Text Animation Start*/
+body{
+    background-color:#7ad9e2;
+}
+.header{
+    color: white;
+    text-align: center;
+    padding-top:10em;
+    text-decoration: none;
+}
+/*Text Animation End*/
