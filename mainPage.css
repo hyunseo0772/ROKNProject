@@ -1,46 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    width: 1200px;
-    margin: 0 auto;
-}
-#header{
-    position: relative;
-}
-.title{
-    margin-top: 60px;
-    text-align: center;
-    text-decoration: none;
-}
-div.search{
-    width: 700px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#container{
-    overflow: hidden;
-    width: 1300px;
-    height: 700px;
-    border-top: 1px solid black;
-}
-#left{
-    float: left; 
-    width: 148px;
-    height: 699px;
-    border-right: 1px solid black;
-}
-#right{
-    float: left;
-    width: 1250px;
-}
 /*SideNav css Start*/
 body {
     font-family: "Lato", sans-serif;
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -53,7 +14,6 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 15px 15px 15px 32px;
     text-decoration: none;
@@ -62,11 +22,9 @@ body {
     display: block;
     transition: 0.3s;
 }
-
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -74,9 +32,93 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 /*SideNav css End*/
+
+@media screen and (max-width:1250px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #header{
+        position: relative;
+        margin: 0 auto;
+    }
+    .title{
+        margin-top: 60px;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+    }
+    div.search{
+        width: 400px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #container{
+        overflow: hidden;
+        width: 100%;
+        height: 700px;
+        border-top: 1px solid black;
+    }
+    #left{
+        visibility: hidden;
+    }
+    #right{
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:1250px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 1400px;
+        margin: 0 auto;
+    }
+    #header{
+        position: relative;
+        margin: 0 auto;
+    }
+    .title{
+        margin-top: 60px;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+    }
+    div.search{
+        width: 700px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #container{
+        overflow: hidden;
+        width: 1400px;
+        height: 700px;
+        border-top: 1px solid black;
+    }
+    #left{
+        float: left; 
+        width: 148px;
+        height: 699px;
+        border-right: 1px solid black;
+    }
+    #right{
+        float: left;
+        width: 1250px;
+        padding: 10px;
+    }
+}
