@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    position: relative;
+}
+.title{
+    margin-top: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+div.search{
+    width: 700px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#container{
+    overflow: hidden;
+    width: 1300px;
+    height: 700px;
+    border-top: 1px solid black;
+}
+#left{
+    float: left; 
+    width: 148px;
+    height: 699px;
+    border-right: 1px solid black;
+}
+#right{
+    float: left;
+    width: 1250px;
+}
+/*SideNav css Start*/
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 15px 15px 15px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*SideNav css End*/
