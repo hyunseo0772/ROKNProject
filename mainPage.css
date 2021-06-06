@@ -1,124 +1,122 @@
-/*SideNav css Start*/
-body {
-    font-family: "Lato", sans-serif;
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-.sidenav a {
-    padding: 15px 15px 15px 32px;
+#title-link{
+    margin: 0 auto;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    color: deepskyblue;
+    font-size: 40px;
+}
+#title{
+    margin-top: 50px;        
+    text-align: center;
+}
+div.search{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    text-align: center;
+}
+li {
+    display: inline-block;
+}
+li a {
     display: block;
-    transition: 0.3s;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-.sidenav a:hover {
-    color: #f1f1f1;
+li a:hover:not(.active) {
+    background-color: darkgray;
+    text-decoration: none;
+    color: white;
 }
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+#left{
+    visibility: hidden;
 }
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+#right{
+    visibility: visible;
 }
-/*SideNav css End*/
 
-@media screen and (max-width:1250px){
+@media (min-width: 800px){
     *{
         margin: 0;
         padding: 0;
     }
     body{
-        width: 100%;
+        width: 60%;
+        height: 100%;
         margin: 0 auto;
+        font-family: "Lato", sans-serif;
     }
     #header{
+        height: 30%;
         position: relative;
         margin: 0 auto;
     }
-    .title{
-        margin-top: 60px;
-        text-align: center;
-        text-decoration: none;
-        position: relative;
-    }
-    div.search{
-        width: 400px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #container{
-        overflow: hidden;
-        width: 100%;
-        height: 700px;
-        border-top: 1px solid black;
-    }
-    #left{
+    #top-nav{
         visibility: hidden;
     }
-    #right{
-        float: left;
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width:1250px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        width: 1400px;
-        margin: 0 auto;
-    }
-    #header{
-        position: relative;
-        margin: 0 auto;
-    }
-    .title{
-        margin-top: 60px;
-        text-align: center;
-        text-decoration: none;
-        position: relative;
-    }
-    div.search{
-        width: 700px;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
     #container{
         overflow: hidden;
-        width: 1400px;
-        height: 700px;
+        width: 100%;
+        height: auto;
         border-top: 1px solid black;
     }
     #left{
+        visibility: visible;
         float: left; 
-        width: 148px;
-        height: 699px;
-        border-right: 1px solid black;
+        width: 15%;
+        height: 100%;
     }
     #right{
         float: left;
-        width: 1250px;
+        width: 85%;
+        height: auto;
         padding: 10px;
+        border-left: 1px solid black;
     }
+    /*SideNav css Start*/
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 15px 15px 15px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    /*SideNav css End*/
 }
