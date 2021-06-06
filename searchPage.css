@@ -17,9 +17,15 @@ div.bottom-title{
     transform: translateX(-50%);
 }
 a.item{
+    color: white;
     float: left;
     margin: 0 3px;
     padding: 10px;
+    text-decoration: none;
+    
+}
+a.item:hover{
+    color: yellow;
 }
 
 /*Text Animation Start*/
