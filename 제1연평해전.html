@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>제1 연평해전</h2>
+            <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F27755F3851AED6433E" width="80%" title="">
+            <hr>
+            <h5>개요</h5>
+            <ul style="padding-left: 30px;">
+                <li>1999년 북한은 꽃게잡이 어선들을 보호한다는 미명하에 6월 7일 경비정 1척이 북방한계선을 침범한 이래 해상교전이 발생한 6월 15일까지 9일간 11여회 걸쳐 우리 영해를 침범</li>
+                <li>9일부터는 북한이 경비정을 10척으로 증강하고, 편대를 구성해 NLL 7~13km까지 침범</li>
+                <li>우리 해군은 초계함 2척, 고속정 5개 편대를 현장에 투입</li>
+                <li>15일 08시 45분 북한 경비정 4척이 NLL을 침범하여 우리 고속정이 충돌을 시도하자 수류탄을 던지며 주변 북한 경지정과 합세하여 소총과 25mm 기관포를 발사하기 시작</li>
+                <li>총 10척의 북한 함정이 공격해왔지만, 40mm와 76mm 기관포로 응사하여 압도적으로 14분 여 만에 승리를 거둠</li>
+                <li>북한 함정 중 어뢰정 1척 침몰, 대형 경비정 대파, 중형 경비정 2척 반파(예인), 소형 경비정 2척 파손 등 최소 30여 명 사망과 70여명 부상시킴</li>
+                <li>우리 해군은 고작 4척의 고속정과 1척의 초계함 미미한 파손, 9명이 가벼운 부상</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>당시 교전 영상</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fBZEwX_RRdc?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <hr>
+            <h3>전승비</h3>
+            <img src="https://www.navy.mil.kr/mbshome/mbs/navy/images/navy_060406020000_1.jpg" width="482">
+            <h3>제1연평해전 전승비문</h3>
+            <p>제1연평해전은 1999년 6월 6일부터 6월 15일까지 대연평도 서측 북방한계선 (NLL) 남방해역에서 남?북 해군 간 한국전 이후 최대 규모로 치러진 해상전투로서 우리 해군이 빛나는 승리를 거둔 해전이다.<br>
+                <br>
+                북 해군은 기간 중 매일 일출 전부터 밤늦게까지 경비정 3~10척으로 북방한계선 (NLL)을 무실화할 목적으로 북방한계선 (NLL)을 남하침범하여 우리 해군 함정에 충돌공격을 시도하였다. 그러나 우리 해군은 북방한계선 (NLL)을 사수하고 확전과 긴장 고조를 방지하기 위하여 북 해군 함정의 충돌공격을 회피하고, 고속 포위기동으로 대응하면서 북 함정에 선미 충돌로 맞대응하였다.<br>
+                <br>
+                이러한 상황이 매일 계속되던 중, 6월 15일 09시 28분 북 경비정(PC-381)이 우리 고속정(PKM-325,338)에게 기습사격을 가해옴에 따라, 09시 42분까지 14분간 북 함정 10척과 우리 해군 함정 12척이 교전하여 북 함정 1척 격침, 5척 대파, 잔여 4척을 증파시켰으나 우리 해군은 경미한 손상을 입는 혁혁한 전과를 올림으로써 북방한계선을 확실하게 사수하였다.<br>
+                <br>
+                본 제1연평해전을 통해 우리 해군은 북 해군에 대해 언제나 승리할 수 있다는 자신감과 용기를 갖게 되었고, 우리 국민은 해군에 대해 신뢰감을 갖게 되었음은 물론 강한 군사력만이 북 도발을 막을 수 있다는 교훈을 얻게 되었으며, 북 해군에게는 패배감과 두려움을 안겨줌과 동시에 우리 해군의 해역방어 의지를 확실하게 각인 시켜주었다.<br>
+                <br>
+                여기에 우리 해군의 빛나는 전승을 기리고, 불굴의 투혼을 발휘한 장병들의 감투정신을 후세에 귀감으로 남기고자 이곳에 전승비를 세운다.<br>
+                <br>
+                2007년 12월 20일<br>
+                해군참모총장</p>
+        </div>
+    </div>
+</body>
+</html>

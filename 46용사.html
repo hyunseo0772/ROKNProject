@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>천안함 46용사</h2>
+            <img src="https://w.namu.la/s/c9cd4c993fdc470b86535236274d505b1121b25813e0fb69a56fe1890c95c3cd982d0be1cbc57bf5255a424dc91509da458e59348c66ea5c5bb72d6a81bc11c684c581ad81d568307e3304c4c2183177d3d3c7368b3b1b3b9c90baff64a3edc95bc561ba81a7519087f17148d2ef010a" width="80%" title="">
+            <hr>
+            <p>천안함 <a href="46용사.html">46용사</a>로, 박경수 상사(당시 중사)는 <a href="제2연평해전.html">제2 연평해전</a>에서 참수리 357정 승조원이었고, <a href="천안함피격사건.html">천안함</a>에서 전사</p>
+            <br>
+            <p><a href="안동엽.html">안동엽</a> 병장(당시 상병)은 경기대학교 환경에너지시스템공학과 08학번</p>
+            <br>
+            <hr>
+            <h3>추모시</h3>
+            <h5>772함 수병은 귀환하라 -김덕규-</h5>
+            <p>
+                772함(艦) 나와라<br>
+                온 국민이 애타게 기다린다.<br>
+                <br>
+                칠흑(漆黑)의 어두움도<br>
+                서해(西海)의 그 어떤 급류(急流)도<br>
+                당신들의 귀환을 막을 수 없다<br>
+                작전지역(作戰地域)에 남아있는 772함 수병은 즉시 귀환하라.<br>
+                <br>
+                772함 나와라<br>
+                가스터빈실 서승원 하사 대답하라<br>
+                디젤엔진실 장진선 하사 응답하라<br>
+                <br>
+                그대 임무 이미 종료되었으니<br>
+                이 밤이 다가기 전에 귀대(歸隊)하라.<br>
+                <br>
+                772함 나와라<br>
+                <br>
+                유도조정실 안경환 중사 나오라<br>
+                보수공작실 박경수 중사 대답하라<br>
+                후타실 이용상 병장 응답하라<br>
+                <br>
+                거치른 물살 헤치고 바다위로 부상(浮上)하라<br>
+                온 힘을 다하며 우리 곁으로 돌아오라.<br>
+                <br>
+                772함 나와라<br>
+                <br>
+                기관조정실 장철희 이병 대답하라<br>
+                사병식당 이창기 원사 응답하라<br>
+                <br>
+                우리가 내려간다<br>
+                SSU팀이 내려 갈 때 까지 버티고 견디라.<br>
+                <br>
+                772함 수병은 응답하라<br>
+                호명하는 수병은 즉시 대답하기 바란다.<br>
+                <br>
+                남기훈 상사, 신선준 중사, 김종헌 중사, 박보람 하사, 이상민 병장(1988년생), 김선명 상병,<br>
+                강태민 일병, 심영빈 하사, 조정규 하사, 정태준 이병, 박정훈 상병, 임재엽 하사,<br>
+                조지훈 일병, 김동진 하사, 정종율 중사, 김태석 중사, 최한권 상사, 박성균 하사,<br>
+                서대호 하사, 방일민 하사, 박석원 중사, 이상민 병장(1989년생), 차균석 하사, 정범구 상병,<br>
+                이상준 하사, 강현구 병장, 이상희 병장, 이재민 병장, 안동엽 상병, 나현민 일병,<br>
+                조진영 하사, 문영욱 하사, 손수민 하사, 김선호 일병, 민평기 중사, 강준 중사,<br>
+                최정환 중사, 김경수 중사, 문규석 중사.<br>
+                <br>
+                호명된 수병은 즉시 귀환하라<br>
+                전선(戰線)의 초계(哨戒)는 이제 전우(戰友)들에게 맡기고<br>
+                오로지 살아서 귀환하라<br>
+                이것이 그대들에게 대한민국이 부여한 마지막 명령(命令)이다.<br>
+                <br>
+                대한민국을 보우(保佑)하시는 하느님이시여,<br>
+                <br>
+                아직도 작전지역에 남아 있는<br>
+                우리 772함 수병을 구원(救援)하소서<br>
+                <br>
+                우리 마흔 여섯 명의 대한(大韓)의 아들들을<br>
+                차가운 해저(海底)에 외롭게 두지 마시고<br>
+                온 국민이 기다리는 따듯한 집으로 생환(生還)시켜 주소서<br>
+                <br>
+                부디<br>
+                <br>
+                그렇게 해 주소서.<br>
+                <br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>故 안동엽 병장</h2>
+            <p>생애 : 1988년 3월 4일 ~ 2010년 3월 26일</p>
+            <p>출생지 : 서울시</p>
+            <p>최종 계급 : 병장</p>
+            <img src="https://www.navy.mil.kr/mbshome/mbs/navy/images/pic/img_001010001_40.jpg" width="300px">
+            <br>
+            <hr>
+            <h2>생애</h2>
+            <ul style="padding-left: 30px;">
+                <li>1988년 서울시 출생</li>
+                <li>경기대학교 환경에너지시스템공학과 08학번으로 입학</li>
+                <li>2009년 2월 해군병 553기로 입대</li>
+                <li>09년 5월 14일 천안함 이발병 부임</li>
+                <li>2010년 3월 26일 <a href="천안함피격사건.html">천안함 피격 사건</a>으로 전사</li>
+                <li>화랑 무공훈장 추서</li>
+            </ul>
+            <br>
+            <hr>
+            <h2>사진</h2>
+            <img src="http://www.newswin.kr/news/photo/201004/3139_2281_756.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

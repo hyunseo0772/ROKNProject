@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+            <ul style="padding-left: 30px;padding-top: 15px;">
+                <li><a href="전병익.html">전병익 중사</a></li>
+                <li><a href="김창학.html">김창학 하사</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <h2>대한해협 해전</h2>
+            <img src="https://www.navy.mil.kr/mbshome/mbs/navy/editorUpload/20171207_143103631_64778.jpg" width="80%" title="백두산함">
+            <img src="https://www.navy.mil.kr/mbshome/mbs/navy/editorUpload/20171207_101122496_25933.png" width="80%" height="292" title="백두산함 승조원">
+            <hr>
+            <h5>6.25 전쟁 발발과 백두산함</h5>
+            <ul style="padding-left: 30px;">
+                <li>1950년 6월 25일 새벽 4시를 기해 북한 지상군이 38도선을 넘어 기습 남침</li>
+                <li>북한 해군은 지상군 남침 개시 30분전, 3시 30분 지상군과 연계를 위해 해상을 통해 동해안의 강를, 옥계, 임원등에 육전대와 유격대를 상륙</li>
+                <li>6월 25일 오후 3시 긴급 출동 명령을 받고 오후 3시 진해항 출항</li>
+                <li>6월 25일 오후 8시 12분, 부산 동북방 약 30마일 해상에서 검은 연기 발견</li>
+                <li>정선 명령에도 불응하자 적 선박으로 판단하여 해군본부에 사격명령 허가를 요청</li>
+                <li>6월 26일 밤 0시 10분 해군본부로부터 사격명령을 받고 0시 30분에 적 선박에 사격 개시, 쌍방교전</li>
+                <li>교전 결과 북한군 600여명의 무장병력이 탑승한 1,000톤급 적무장선박 침몰(01시35분), 백두산함 승조원 <a href="전병익.html">전병익</a> 중사와 <a href="김창학.html">김창학</a> 하사 전사</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>해사 3기 당시 소위, 최영섭 대령의 증언</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bvmF76ue_IA?start=853" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <hr>
+            <h3>대한해협 해전 의의</h3>
+            <p>"701함의 대한해협해전은 6·25전쟁의 분수령이 되었다.
+                6월 25일 오후 부산에서 북동쪽으로 수마일 떨어진 곳에서 남한경비함 701함이 6백여명의 무장 공산군을 태우고 부산항을 공격하려던 약 1천톤급 북한 선박 한 척을 발견, 격침시켰다. 만약 이 북한 무장선박이 아무런 제재를 받지 않고 부산에 상륙했더라면 전쟁의 양상은 크게 달라졌을 것이다."
+                (노먼 존슨,『한국전쟁』, 1991)
+            </p>
+            <br>
+            <p>"백두산 함은 부산항으로 침투하려던 적의 게릴라 부대를 사전에 격멸함으로써 후방교란을 미연에 방지함과 지속적인 해상교통로 보호로 전쟁 지속능력 유지에 다대하게 기여하였다."
+                (해군본부,『6·25전쟁과 해군작전」, 2012)</p>
+        </div>
+    </div>
+</body>
+</html>

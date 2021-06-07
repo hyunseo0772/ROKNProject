@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+            <ul style="padding-left: 30px;padding-top: 15px;">
+                <li><a href="46용사.html">천안함 46용사</a></li>
+                <li><a href="한주호.html">한주호 준위</a></li>
+                <li><a href="안동엽.html">안동엽 병장</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <h2>천안함 피격 사건</h2>
+            <img src="https://ww.namu.la/s/63875c1ab21fdd5731f9f28b8fbf846ce270a426ab381802a80640e050f9041585d7035db43041e40c012342c8098a0085236c938617ec03222e287c5ba6945aa2824e50c8a16951f56b5af1d61934b4b3d410cc6007d85ecb9e3de229cae9db15a9e79e0d33b462781e784d0836d619" width="80%" title="">
+            <hr>
+            <h5>개요</h5>
+            <ul style="padding-left: 30px;">
+                <li>2010년 3월 26일 천안함은 북서쪽으로 6.7노트 속도로 기동하면서 통상적인 경계임무를 수행 </li>
+                <li>21시 24분 강력한 폭발음과 함께 두 동강으로 절단</li>
+                <li>21시 28분 함미가 먼저 침몰</li>
+                <li>21시 58분 해군 고속정 3척 현장 도착, 인명구조 시작</li>
+                <li>해양경찰-591함 등에 의해 승조원 58명 구조</li>
+                <li>3월 27일 13시 37분 함수 완전 침몰</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>영상</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ogjphpCd7Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                추모 영상
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RwOcfBPLdeo?start=380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>
+                천안함 생존자이자 천안함생존자 예비역전우회장 전준영씨의 증언
+            </p>
+            <br>
+            <hr>
+            <h3>위령탑</h3>
+            <img src="http://www.navy.mil.kr/mbshome/mbs/navy/images/navy_060409020000_1.jpg" width="80%">
+            <h3>천안함 위령탑 비문</h3>
+            <p>
+                서해 바다를 지키다 장렬하게 전사한 천안함 <a href="46용사.html">46용사</a>가 있었다. 이제 그 고귀한 희생정신을 기려 여기 위령탑을 세우나니 비록 육신은 죽었다 하나 그 영혼, 역사로 다시 부활하고 국민의 가슴속에 영원히 살아 자유대한의 수호신이 되리라.<br>
+                <br>
+                2010년 3월 26일 21시 22분, 우리의 용맹스러운 용사들과 함께 서해를 지키던 한국 최정예 전투함, 천안함(PCC-772)은 서해의 백령도 서남방 2.5km 해역에서 경비작전을 수행 중 갑자기 엄청난 수중 폭발로 큰 충격을 받았다. 그 충격으로 선체는 함수와 함미로 절단되었고 함미함체는 곧 바로 침몰하였다. 함수함체는 오른쪽이 90도 기운 상태에서 부력을 잃었다. 침몰 직전의 함수 함체에서 104명의 승조원 중 58명은 해군 고속정과 해경함에 의해 구조되었으나 46용사들은 그 어디에서도 찾을 수 없었다.<br>
+                <br>
+                충격적인 비보를 접한 국민들은 경악했다. 군은 즉각적인 초동조치를 취하면서 미해군의 전력과 민간인, 관계기관 등의 지원과 협조로 거친 물살과 한치 앞을 분간하기 어려운 해상에서 동년 5월 20일까지 탐색 및 구조작전을 계속하였다. 그러나 전우가 목숨까지 바쳐가며 구하려 했던 천안함 <a href="46용사.html">46용사</a>들은 온 국민들의 한결같은 염원을 뒤로한 채 끝내 주검으로, 장렬한 산화로 우리 곁에 돌아오고 말았다.<br>
+                <br>
+                천안함 피격사건에 대한 원인을 찾기 위해 민ㆍ군 합동조사단과 미국, 호주, 영국, 스웨덴 4개국에서 파견된 전문가들은 과학적이고 주도면밀한 조사와 검증작업을 펼쳤다. 그리고 동년 5월 15일에는 한 민간 어선이 천안함 침몰 해역에서 피격 사건의 결정적 증거물이라 할 북한제 어뢰 추진체를 수거함으로써 천안함의 침몰이 ‘북한제 감응어뢰’의 강력한 수중 폭발에 의해 일어난 것이었음을 확인하였다. 이로써 천인공노할 북한의 잔악하고 호전적인 도발 작태는 만천하에 드러났다.<br>
+                <br>
+                천안함의 피격에서 보여준 북한의 만행은 우리민족에게 역사상 아물 수 없는, 깊은 상처를 주었다. 그러나 <a href="46용사.html">46용사</a>들의 숭고한 희생이 있었기에 오히려 ‘전우가 목숨 바쳐 지킨 바다, 우리가 사수한다’는 해군장병들의 해양수호의지는 자손만대 계승될 것이다.
+                <br>
+                마지막 순간까지 그토록 지키려 애썼던 서해 푸른 바다를 가슴에 품고 고이 잠든 천안함 <a href="46용사.html">46용사</a>들이여! 그 어느 누구보다도 용맹스러웠던 바다의 전사들이여! 채 꽃 피지 못한 채 산화한 그대들의 숭고한 애국심과 희생정신은 이제 우리들의 가슴 속에 영원히 살아 숨 쉴 것이다.<br>
+                <br>
+                오오, 나라를 위해 장렬히 전사한 충무공의 후예들이여, 우리들은 그대들의 고귀한 정신을 후세의 귀감으로 삼고자 이곳에 위령비를 세운다.<br>
+                <br>
+                2011년 3월 26일<br>
+                해군참모총장<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

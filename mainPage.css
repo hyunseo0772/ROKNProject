@@ -1,0 +1,127 @@
+html{
+    background-color: #e6e3e3;
+}
+#title-link{
+    margin: 0 auto;
+    text-decoration: none;
+    color: deepskyblue;
+    font-size: 40px;
+}
+#title{
+    margin-top: 50px;        
+    text-align: center;
+}
+div.search{
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    text-align: center;
+}
+#top-nav ul li {
+    display: inline-block;
+}
+#top-nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#top-nav ul li a:hover:not(.active) {
+    background-color: darkgray;
+    text-decoration: none;
+    color: white;
+}
+#left{
+    visibility: hidden;
+}
+#right{
+    padding: 15px;
+    visibility: visible;
+    font-size: 15px;
+}
+
+@media (min-width: 800px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: "Lato", sans-serif;
+    }
+    #header{
+        height: 30%;
+        position: relative;
+        margin: 0 auto;
+    }
+    #top-nav{
+        visibility: hidden;
+    }
+    #container{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid black;
+    }
+    #left{
+        visibility: visible;
+        float: left; 
+        width: 15%;
+        height: 100%;
+    }
+    #right{
+        float: left;
+        width: 85%;
+        height: auto;
+        padding: 15px;
+        border-left: 1px solid black;
+    }
+    /*SideNav css Start*/
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 15px 15px 15px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    /*SideNav css End*/
+}

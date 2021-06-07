@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>더보기</h2>
+            <h5>자기소개</h5>
+            <p>이름 : 서정현</p>
+            <p>학번 : 202014936</p>
+            <p>학과 : 컴퓨터공학부</p>
+            <p>
+                주제 선정 이유<br>
+                >> 어렸을 때부터 진해, 동해, 울산, 다시 진해를 왔다갔다 하면서 바닷가에 살았으며, 해군에 관심이 많았고, 군인이 된다면 해군이 될 것이라 마음먹었습니다. 그러다가 대학생이 되면서, 학사 장교에 지원할 수 있는 조건이 되었고, 면접을 준비하면서 알게된 내용을 메모장에 몇몇 적어둔게 있었는데, 이번 기회에 한번 해군에 대해 구성을 해보면 좋을 것 같아 선정하게 되었습니다.
+            </p>
+            <p>
+                목적<br>
+                >> 해군의 사람들이라는 주제를 위키 형식의 웹페이지를 구현해보고 싶었습니다. 
+            </p>
+            <br>
+            <hr>
+            <h2>참고 자료</h2>
+            <ul style="padding-left: 30px;">
+                <li>6.25전쟁과 한국해군 작전 - 한국해군</li>
+                <li>천안함 피격사건백서</li>
+                <li>한국민족문화대백과사전</li>
+                <li>위키</li>
+                <li>대한민국 해군 홈페이지 역사관, 자료</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

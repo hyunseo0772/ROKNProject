@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>故 전병익 중사</h2>
+            <p>생애 : 1929년 6월 24일 ~ 1950년 6월 26일</p>
+            <p>출생지 : 충청북도 음성군</p>
+            <p>최종 계급 : 중사</p>
+            <img src="https://post-phinf.pstatic.net/MjAxOTExMjlfMjI5/MDAxNTc1MDEzNjI2NzE0.aX419fTJZIifOnM_9kKncOBIA3R-m9BIC2lvpGTt7I0g.xey6nkW4XEM6f1yRUmtLuck9vyg8HOH9t_56NU6bLHkg.PNG/191129_%EC%9D%B4%EB%8B%AC%EC%9D%98625%EC%A0%84%EC%9F%81%EC%98%81%EC%9B%85_12%EC%9B%94-%EC%A0%84%EB%B3%91%EC%9D%B5%EC%A4%91%EC%82%AC_%EB%82%B4%EC%A7%801_v2.png?type=w1200" width="300px" height="300px">
+            <br>
+            <hr>
+            <h2>생애</h2>
+            <ul style="padding-left: 30px;">
+                <li>1929년 6월 24일 충청북도 음성군 출생</li>
+                <li>1947년 7월 1일 해군 신병 8기로 입대하여, 해군항해학교를 수석으로 졸업, 하사로 임관</li>
+                <li>백두산함 3인치 포 장포사로 <a href="대한해협해전.html">대한해협 해전</a> 참전</li>
+                <li>전투 중 포탄에 의해 흉부를 관통당하여 사망, 전사하는 순간까지 적함의 상태를 물으며 전황을 걱정하였고, "대한민국 만세!"를 외치며 끝내 숨을 거둠.(1950년 6월 26일)</li>
+                <li>을지 무공훈장 추서</li>
+            </ul>
+            <br>
+            <hr>
+            <h2>여담</h2>
+            <p>대한민국 해군 <a href="윤영하.html">윤영하</a>급 유도탄고속함(PKG: Patrol Killer Guided-missile)은 해군 창설 이후 전투와 해전에서 희생정신을 발휘하여 귀감이 된 인물의 이름을 붙이는데, <a href="전병익.html">전병익</a> 중사는 PKG732 <a href="전병익.html">전병익</a>함이 되었습니다.</p>
+            <img src="http://www.usnews.co.kr/news/photo/201801/48364_40900_3629.jpg">
+        </div>
+    </div>
+</body>
+</html>

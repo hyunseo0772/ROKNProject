@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>故 조천형 중사</h2>
+            <p>생애 : 1976년 04월 16일 ~ 2002년 6월 29일</p>
+            <p>출생지 : 대전시</p>
+            <p>최종 계급 : 중사</p>
+            <img src="https://www.navy.mil.kr/mbshome/mbs/navy/images/navy_060407020000_4.jpg" width="300px">
+            <br>
+            <hr>
+            <h2>생애</h2>
+            <ul style="padding-left: 30px;">
+                <li>1976년 4월 16일 대전시 출생</li>
+                <li>1996년 해군병 제 402기로 입대, 1998년 8월 22일 해군 병기하사로 임관</li>
+                <li>작전사 의장대 의장병, 충남함 병기사</li>
+                <li>1999년 10월 25일부로 참수리 357호정 병기사로 부임</li>
+                <li>참수리 357 병기사로 <a href="제2연평해전.html">제2 연평해전</a> 참전</li>
+                <li>2002년 6월 29일 연평도 근해 임무수행중 적함과 교전으로 현장에서 장렬히 전사</li>
+                <li>화랑 무공훈장 추서</li>
+            </ul>
+            <br>
+            <hr>
+            <h2>여담</h2>
+            <p>대한민국 해군 <a href="윤영하.html">윤영하</a>급 유도탄고속함(PKG: Patrol Killer Guided-missile)은 해군 창설 이후 전투와 해전에서 희생정신을 발휘하여 귀감이 된 인물의 이름을 붙이는데, <a href="조천형.html">조천형</a> 중사는 PKG713 <a href="조천형.html">조천형</a>함이 되었습니다.</p>
+            <img src="http://bemil.chosun.com/nbrd/data/10044/upfile/201006/20100625213725.JPG" width="428">
+        </div>
+    </div>
+</body>
+</html>

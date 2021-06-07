@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>당포함 피격 사건</h2>
+            <img src="https://ww.namu.la/s/b084c306f21fb968142201b1880765852a6487397a0d23a53691505ca77834f2d6bb51c9babd2c5dfb38eb9215af3db804d61eb2a3c8aa46f25cd8fc85c34d45be661e7a7f069bd9a833e7ee65a6a65fe264438c80555ae1cd46031436f19da3cb241ce9fcf543f3d28a198dc4de2dd5" width="80%" title="우현으로 기우는 당포함">
+            <hr>
+            <h5>개요</h5>
+            <ul style="padding-left: 30px;">
+                <li>1967년 1월 19일, 남한보다 명태가 많은 북한 해역으로 명태를 잡으려고 아 어선군 50여척이 NLL을 넘어감</li>
+                <li>북한 경비정 2척이 출현</li>
+                <li>당포함은 아 어선군을 납북하기위해 접근한다고 판단, NLL을 넘어 아 어선군으로 이동</li>
+                <li>13시 55분 북한의 해안포대에서 122mm 해안포 10여 문이 기습포격</li>
+                <li>당포함도 응전하여 맹렬한 포격전 발생</li>
+                <li>당포함은 최후까지 응전하였지만 14시 34분 280여발의 집중 포격을 받고 침몰 위기에 처함</li>
+                <li>급보를 접한 동해경비 함정 중, 한산함이 예인을 시도하였지만 우현으로 기울며 침몰</li>
+                <li>승조장병 79명 중 함장을 포함한 51명이 구조되었고 그 중 11명 사망, 11명은 중상, 28명은 시신 조차 찾지 못함</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>1967년 1월 28일 대한뉴스에서 제작된 기록영화</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b03oaRhgdAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <hr>
+            <h3>전자사</h3>
+            <p>중위 이석무, 중위 박태만, 상사 이상호, 상사 장태식, 중사 홍수근, <br>중사 조덕수, 중사 김종구, 중사 김경두, 중사 주재진, 하사 윤임석, <br>하사 박정남, 하사 김길언, 하사 이수만, 하사 전영일, 하사 성병수, <br>하사 최갑식, 하사 손두성, 하사 김창성, 하사 배정남, 하사 이광년, <br>하사 박효삼, 병장 이무형, 병장 강영방, 병장 장인덕, 병장 송인태, <br>병장 김성태, 병장 임승철, 병장 강호종, 병장 김종관, 병장 윤종춘, <br>상병 손봉수, 상병 이희성, 상병 박홍걸, 상병 배윤상, 상병 최정래, <br>일병 심용섭, 일병 방현구, 이병 노영수, 이병 김동선</p>
+            <br>
+            <hr>
+            <h3>40주기 추모사</h3>
+            <p> 1967년 1월 19일
+                이 강토에서 땅이 터지고 바다가 뒤집히는 바로<br>
+                그날이었습니다. 수많은 젊은 용사들이 조국을 지키다가<br>
+                이 동해바다에서 산화한 그날이었습니다. 평화롭고 조용하던 이 바다 속에 당포함을 수장시킨 바로<br>
+                그날이었습니다.<br>
+                <br>
+                어언 40년의 긴긴 세월이 흘렀건만, 어찌 그날을 잊을 수가<br>
+                있겠습니까?<br>
+                이 몸이 진토되어 조국 땅위에 흩어진다고 한들<br>
+                어찌 한 순간이라도 잊을 수가 있겠습니까?<br>
+                그때 그 순간들을 생각할 때마다<br>
+                피가 거꾸로 치솟고 호흡이 멈추는 것만 같습니다.<br>
+                <br>
+                저는 두 눈으로 똑똑히 보았습니다.<br>
+                쏟아지는 포탄 속에서도 담대히 싸우는 당신들의 모습을 <br>
+                보았습니다. 다리가 잘려지고도 임무를 수행하는 모습을 보았습니다. 온몸이 피투성이가 되고도 처절하게 싸워 주었고, 포탄이 떨어져도 무서워하지 아니하고,<br>
+                응사하다가 쓰러지는 모습을<br>
+                이 두 눈으로 똑똑히 보았습니다.<br>
+                
+                조국이 무엇이기에 그렇게도 장렬하게 싸우다가<br>
+                산화하였습니까?<br>
+                가족을 뒤로 두고 가시는 당신의 마음은 어떠하였습니까?<br>
+                사랑하는 아내와 어린 자녀들을 두고도 그렇게 용감히 싸울 수<br>
+                가 있었습니까?<br>
+                핏덩어리 길현이 금희를, 그리고 창민이는 생각도 하지 않으셨<br>
+                더란 말입니까?<br>
+                영환이와 영택이를, 석우를, 그리고 부언이와 영미, 준성이와 준<br>
+                식이는 당신들의 안중에도 없던 것입니까?<br>
+                <br>
+                어린 것들은 아버지를 생각하며 칭얼거렸지만, 아버지의 위대한 모습을 가슴 속에 그리면서 성장했습니다. 곱디곱던 당신의 아내는 이제 백발이 성성해졌습니다. 진자리 마른자리 길러주시던 부모님들도<br>
+                사랑하는 자식을 먼저 보내 아픔이 태산 같았지만, 조국을 사랑하는 마음이 지극하셨기에 다 잊으시고, 지금은 하늘나라에 가 계십니다. 그러던 아이들도 장성해서 출가들을 모두 했답니다. 하오니 이제는 모든 것 다 잊으시고, 하늘나라에서 편히 쉬시기를 바랍니다.<br>
+                <br>
+                위민헌신의 귀감 당포함 영웅들<br>
+                <br>
+                그 날의 전투에서 살아남았던 전우들도<br>
+                이제는 모두 환갑이 훨씬 넘었고, 한 두 사람씩 자꾸만 하늘나라로 돌아가고 있어서, 여기에 모이는 숫자도 점점 줄어들고 있습니다. 해군의 후배들은 여러분들의 위대한 정신을 바라보았고, 또 충성심을 배웠습니다. 조국이 무엇인지도 깨달았습니다. 그들의 가슴 속에는 여러분들의 위대한 끓는 피가 함께 흐르고<br>
+                있습니다. 여러분의 숭고한 희생과 헌신이 있었기에<br>
+                오늘의 대한민국이 있습니다. 여러분의 위대한 호국신념을 우리 국민 모두가 똑바로 알고<br>
+                깨달아서 이 나라의 튼튼한 안보체계가 구축되기를 바라는 마음 <br>
+                간절합니다. 그래서 여러분의 희생이 헛되지 않기를 간절히 바라면서, 오늘 추모사를 대신합니다. <br>
+                <br>
+                            2007년 4월 26일<br>
+                    당포함 갑판사관 소위 홍 대 일</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <link rel="stylesheet" href="searchPage.css">
+    <script src="AutoComplete.js"></script>
+    <script src="searchPage.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a href="" class="typewrite" data-period="2000" style="color:white" data-type='[ "Republic Of Korea Navy", "People Of ROKN"]'>
+              <span class="wrap"></span>
+            </a>
+        </h1>
+    </div>
+
+    <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+        <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+          <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+    </form>
+    <script>
+        var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+        autocomplete(document.getElementById("search-word"), nameTitle);
+    </script>
+
+    <div class ="bottom-title">
+        <a href="대한해협해전.html" class="item">대한해협 해전</a>
+        <a href="당포함피격사건.html" class="item">당포함 피격 사건</a>
+        <a href="제1연평해전.html" class="item">제1 연평해전</a>
+        <a href="제2연평해전.html" class="item">제2 연평해전</a>
+        <a href="천안함피격사건.html" class="item">천안함 피격사건</a>
+    </div>
+</body>
+</html>

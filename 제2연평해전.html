@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+            <ul style="padding-left: 30px;padding-top: 15px;">
+                <li><a href="윤영하.html">윤영하 소령</a></li>
+                <li><a href="한상국.html">한상국 상사</a></li>
+                <li><a href="조천형.html">조천형 중사</a></li>
+                <li><a href="황도현.html">황도현 중사</a></li>
+                <li><a href="서후원.html">서후원 중사</a></li>
+                <li><a href="박동혁.html">박동혁 병장</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <h2>제2 연평해전</h2>
+            <img src="http://www.dailynk.com/file/201006/DNKF_1749_296729_1277792707_i.jpg" width="80%" title="">
+            <hr>
+            <h5>개요</h5>
+            <ul style="padding-left: 30px;">
+                <li>2002년 6월 29일 오전 9시 46분 북한 경비정이 남하기동 시작</li>
+                <li>우리 해군은 초계근무 중인 고속정 편대에 경계 강화 지시</li>
+                <li>9시 54분 북한 경비정이 연평도 서쪽 7마일 해상에서 NLL침범</li>
+                <li>참수리 357, 358로 이뤄진 고속정 253편대가 긴급출동하여 대응기동과 경고방송을 하지만 북한경비정은 남하를 멈추지 않음</li>
+                <li>10시 25분 근접 거리에서 진로를 방해하는 차단 기동을 실시한 참수리 357정에서 북한 경비정이 모든 포를 동원하여 교전시작, 그와 동시에 정장 <a href="윤영하.html">윤영하</a> 소령(당시 대위)이 사격 대응을 명령</li>
+                <li>초단 명중 4분 후, 저격수의 총탄에 등을 피격당해 일자로 누운 채 정장 <a href="윤영하.html">윤영하</a> 사망</li>
+                <li>조타장 <a href="한상국.html">한상국</a> 상사(당시 중사)도 조타실 피격으로 전사</li>
+                <li>전투 시작 12분 뒤, 22포 발칸 <a href="황도현.html">황도현</a> 중사(당시 하사)는 적의 집중 공격 속 헬멧을 쓴 두부에 37mm 포탄을 맞아 두부의 3분의 1이 함몰되어 방아쇠를 잡은채 전사</li>
+                <li>21포의 <a href="조천형.html">조천형</a> 중사(당시 하사)는 집중 사격을 받던 중 포탑 내부에 화재가 발생해 전신 화상을 입고 방아쇠를 잡은채 질식사</li>
+                <li>M60 기관총의 내연부사관 <a href="서후원.html">서후원</a> 중사(당시 하사)는 저격수에 의해 왼쪽 흉부를 관통당해 전사</li>
+                <li>5군데 총상과 파편상에도 승조원을 구호하던 <a href="박동혁.html">박동혁</a> 병장(당시 상병)은 <a href="서후원.html">서후원</a> 중사가 쓰러지자 M60기관총을 잡고 난사하다가 피격되어 재기 불능 상태가 됨</li>
+                <li>이를 보던 권기형 상병은 고사총 파편에 왼쪽 손가락이 부러진 상태로 <a href="서후원.html">서후원</a> 중사와 <a href="박동혁.html">박동혁</a> 병장이 쏘던 M60기관총을 오른손으로만 전탄 발사한 후, 병기장 황창규 중사가 사격을 마치고 나온 41포로 들어가서 발사하려던 것을 황창규 중사가 그러다 죽는다며 함내로 끌고 들어감</li>
+                <li>다른 고속정의 지원으로 북한경비정은 퇴각</li>
+            </ul>
+            <br>
+            <hr>
+            <h3>교전 재연 영상</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/K1AcUH-4fiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <hr>
+            <h3>전승비</h3>
+            <img src="https://www.navy.mil.kr/mbshome/mbs/navy/images/navy_060407030000_1.jpg" width="482">
+            <h3>제2연평해전 전적비문</h3>
+            <p>
+                2002년 6월 29일, 서해에서는 민족의 평화를 깨는 악의 포성이 울렸다. 2002년 한일 월드컵 축구대회가 열리고 있는 한반도로 전 세계인의 이목이 집중되던 바로 그날, 2척의 북한 경비정이 서해 북방한계선을 넘어 기습 남침하였다. 우리 고속정 편대는 북한의 도발을 막기 위해 대응 기동하다가 북한 경비정의 기습공격을 받자 이에 맞서 싸웠다. 제2연평해전은 이렇게 하여 일어난 31분간의 해전이었다.<br>
+                <br>
+                우리 해군은 죽기를 각오하고 싸워 북한 경비정 중 중형 1척을 물리치고, 대형 1척을 크게 격파하였을 뿐만 아니라 북한군 30여명을 사상시키는 전과를 올렸다. 이 해전에서 우리 해군도 고속정 참수리-357호정이 침몰하였고, 정장을 포함해 장병 6명이 전사하고 19명의 부상자가 생겼다.<br>
+                <br>
+                우리는 포연탄우 속에서도 임전무퇴의 기상을 발휘해 조국의 바다를 끝까지 지킨 2함대 장병들의 숭고한 감투정신과 빛나는 무훈을 민족의 가슴에 깊이 새기고, 산화한 젊은 영령들의 전공을 높이 기리고자 제2연평해전 1주년을 맞이해 여기에 그 전적비를 세운다.<br>
+                <br>
+                2003년 6월<br>
+                해군참모총장<br>
+            </p>
+            <br>
+            <hr>
+            <h3>다시 한자리에 모인 6용사</h3>
+            <p>6용사의 이름으로 명명된 <a href="윤영하.html">윤영하</a>급 미사일 고속정 6척이 <a href="제2연평해전.html">제2 연평해전</a> 13주기 이틀전 한자리에 모여 해상기동훈련 실시</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zBEezH2QomA?start=138" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

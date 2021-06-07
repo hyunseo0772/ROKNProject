@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="AutoComplete.css">
+    <script src="AutoComplete.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="top-nav">
+            <ul>
+                <li><a href="대한해협해전.html">대한해협 해전</a></li>
+                <li><a href="당포함피격사건.html">당포함 피격사건</a></li>
+                <li><a href="제1연평해전.html">제1 연평해전</a></li>
+                <li><a href="제2연평해전.html">제2 연평해전</a></li>
+                <li><a href="천안함피격사건.html">천안함 피격사건</a></li>
+              </ul>
+        </div>
+        <div id="title">
+            <a id="title-link" href="index.html">People Of ROKN</a>
+        </div>
+        <div class="search">
+            <form autocomplete="off" action="javascript:pageSearch()" method="POST">
+                <div class="mx-auto mt-5 search-bar input-group mb-3" calss="autocomplete">
+                    <input id="search-word" name="q" type="text" class="form-control rounded-pill" placeholder="검색어" aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </form>
+            <script>
+                var nameTitle = ["김창학", "박동혁", "서후원", "안동엽", "윤영하", "전병익", "조천형", "한상국", "한주호", "황도현"];
+                autocomplete(document.getElementById("search-word"), nameTitle);
+            </script>
+        </div>
+    </div>
+    <div id="container">
+        <div id="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="대한해협해전.html">대한해협 해전</a>
+                <a href="당포함피격사건.html">당포함 피격사건</a>
+                <a href="제1연평해전.html">제1 연평해전</a>
+                <a href="제2연평해전.html">제2 연평해전</a>
+                <a href="천안함피격사건.html">천안함 피격사건</a>
+                <a href="더보기.html">더보기</a>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; 기록</span>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "400px";
+                }
+    
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+        </div>
+        <div id="right">
+            <h2>故 한주호 준위</h2>
+            <p>생애 : 1958년 9월 8일 ~ 2010년 3월 30일</p>
+            <p>출생지 : 서울시</p>
+            <p>최종 계급 : 준위</p>
+            <img src="https://ww.namu.la/s/618200489b70ee56b1ac99e3678a2a753eb640be370b845d90d4d93b2860b53a4e3577515468aa460b8848d34497a081e64b5332a7fe8ac848f2e2e675fd6cbfc46ac252644b9c59c591544c8fb68055a341842fe2879c7e1f861ef323c50be5" width="300px">
+            <br>
+            <hr>
+            <h2>생애</h2>
+            <ul style="padding-left: 30px;">
+                <li>1958년 서울시 출생</li>
+                <li>1975년 2월 서울 수도전기공업고등학교 졸업 직후 해군 부사관으로 입대</li>
+                <li>해군 특수전 초급반(UDT/SEAL) 제22차 과정을 수료하고 훈련교관, 작전요원 등을 역임</li>
+                <li>해군 준사관 41기 과정을 수료하고 준위로 임관</li>
+                <li>제2함대 소속 <a href="천안함피격사건.html">천안함</a>이 침몰하자 <a href="한주호.html">한주호</a> 준위는 출동 명령이 없었지만 "아들과도 같은 이들이 바다 속에 있다."는 통화와 함께 자발적으로 구조 작전에 참가</li>
+                <li>높은 파도와 낮은 수온 등 극한의 환경에서 잠수 수색활동을 하다가 실신</li>
+                <li>미 해군 구조함으로 후송돼 응급처치를 받았지만 순직</li>
+                <li>충무 무공훈장 추서</li>
+                <li>보국훈장 광복장 추서</li>
+            </ul>
+            <br>
+            <hr>
+            <h2>영상</h2>
+            <p>영결식</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yMOuqutz5Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <hr>
+            <h2>그 후</h2>
+            <p>진해루공원에 故 한주호 준위의 동상을 통해 투철한 군인정신과 희생정신을 기렸습니다.</p>
+            <img src="https://www.korea.kr/newsWeb/resources/attaches/namo/2011.03/31/69321/1.jpg">
+        </div>
+    </div>
+</body>
+</html>
